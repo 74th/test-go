@@ -8,11 +8,11 @@ import (
 )
 
 type Data struct {
-	Time time.Time `json:"t",omitempty`
+	Time time.Time `json:"time",omitempty`
 }
 
 type Data2 struct {
-	Time *time.Time `json:"t",omitempty`
+	Time *time.Time `json:"time",omitempty`
 }
 
 func TestJsonTime(t *testing.T) {
