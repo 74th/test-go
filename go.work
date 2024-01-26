@@ -3,4 +3,5 @@ go 1.21.1
 use (
 	./20240124-json_time
 	./20240125-error_wrap
+	./20240125_slice_array
 )
