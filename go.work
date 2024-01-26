@@ -4,4 +4,5 @@ use (
 	./20240124-json_time
 	./20240125-error_wrap
 	./20240125_slice_array
+	./20240126-nil_pointer
 )
