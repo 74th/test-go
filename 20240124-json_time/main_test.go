@@ -59,4 +59,12 @@ func TestJsonTime(t *testing.T) {
 
 	// プロパティがなくてもゼロ値になる
 	// DATA: main.Data{Time:time.Date(1, time.January, 1, 0, 0, 0, 0, time.UTC)}
+
+	d2 = Data2{}
+	err = json.Unmarshal([]byte("{}"), &d2)
+	fmt.Println("ERR:", err)
+	fmt.Printf("DATA: %#v\n", d2)
+
+	// プロパティがないとポインタはnilになる
+	// DATA: main.Data2{Time:<nil>}
 }
