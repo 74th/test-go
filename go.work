@@ -6,4 +6,5 @@ use (
 	./20240125-slice_array
 	./20240126-nil_pointer
 	./20240201-deep_copy
+	./20240412-panic_type
 )
