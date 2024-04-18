@@ -7,5 +7,6 @@ use (
 	./20240126-nil_pointer
 	./20240201-deep_copy
 	./20240412-panic_type
+	./20240418-chan_string
 	./20240418-iopipe
 )
