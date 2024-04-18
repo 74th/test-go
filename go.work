@@ -1,4 +1,4 @@
-go 1.21.1
+go 1.22.2
 
 use (
 	./20240124-json_time
@@ -7,4 +7,5 @@ use (
 	./20240126-nil_pointer
 	./20240201-deep_copy
 	./20240412-panic_type
+	./20240418-iopipe
 )
