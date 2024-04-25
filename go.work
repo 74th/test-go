@@ -8,5 +8,7 @@ use (
 	./20240201-deep_copy
 	./20240412-panic_type
 	./20240418-chan_string
+	./20240418-exec_wait
 	./20240418-iopipe
+	./20240419-exec_args
 )
