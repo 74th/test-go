@@ -11,4 +11,5 @@ use (
 	./20240418-exec_wait
 	./20240418-iopipe
 	./20240419-exec_args
+	./20240516-switch-continue
 )
