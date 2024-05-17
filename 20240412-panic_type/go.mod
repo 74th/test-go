@@ -1,3 +1,3 @@
 module github.com/74th/go-testing/20240412-panic_type
 
-go 1.21.1
+go 1.22
