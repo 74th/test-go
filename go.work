@@ -1,4 +1,4 @@
-go 1.22
+go 1.22.3
 
 use (
 	./20240124-json_time
@@ -12,4 +12,5 @@ use (
 	./20240418-iopipe
 	./20240419-exec_args
 	./20240516-switch-continue
+	./20240517-map
 )
