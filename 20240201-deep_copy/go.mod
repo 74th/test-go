@@ -1,4 +1,4 @@
-module github.com/74th/go-testing/20240201-deep_copy
+module github.com/74th/testing-go/20240201-deep_copy
 
 go 1.22
 

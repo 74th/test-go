@@ -9,6 +9,6 @@ fi
 mkdir -p $1
 cp template/main_test.go ./$1/
 cd $1
-go mod init github.com/74th/go-testing/$1
+go mod init github.com/74th/testing-go/$1
 cd ..
 go work use $1
