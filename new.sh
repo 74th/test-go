@@ -6,9 +6,12 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-mkdir -p $1
-cp template/main_test.go ./$1/
-cd $1
-go mod init github.com/74th/testing-go/$1
+TODAY=$(date +%Y%m%d)
+DIR_NAME="${TODAY}_$1"
+
+mkdir -p $DIR_NAME
+cp template/main_test.go ./$DIR_NAME/
+cd $DIR_NAME
+go mod init github.com/74th/testing-go/$DIR_NAME
 cd ..
-go work use $1
+go work use $DIR_NAME
