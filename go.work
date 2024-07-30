@@ -14,5 +14,6 @@ use (
 	./20240516-switch-continue
 	./20240517-map
 	./20240714-streaming_http_server
-	./20240719_json_property_name
+	./20240719-json_property_name
+	./20240730-protobuf-optional
 )

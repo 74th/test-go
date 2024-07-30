@@ -7,7 +7,7 @@ if [ $# -ne 1 ]; then
 fi
 
 TODAY=$(date +%Y%m%d)
-DIR_NAME="${TODAY}_$1"
+DIR_NAME="${TODAY}-$1"
 
 mkdir -p $DIR_NAME
 cp template/main_test.go ./$DIR_NAME/
