@@ -17,6 +17,10 @@ func TestNestedProtoBuf(t *testing.T) {
 			// 型の定義はされている
 			OptionCode: pb.Record_OPTION_1,
 		},
+		SubOption: &pb.Record_SubOption{
+			// メッセージの中に含まれる分には、アンスコで区切られる
+			OptionCode: pb.Record_SubOption_OPTION_1,
+		},
 	}
 
 	b, err := proto.Marshal(input)
@@ -36,5 +40,8 @@ func TestNestedProtoBuf(t *testing.T) {
 	if err != nil {
 		t.Errorf("Failed to unmarshal record: %v", err)
 		return
+	}
+	if !proto.Equal(input, output1) {
+		t.Errorf("unmatch : %#v, %#v", input, output1)
 	}
 }

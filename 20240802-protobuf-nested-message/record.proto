@@ -20,6 +20,17 @@ message Record {
   message Option {
     OptionCode option_code = 1;
   }
+
+  message SubOption {
+    // 同一要素名のEnumは同一メッセージ内に定義できない（protobufの仕様）
+    enum OptionCode {
+      UNSPECIFIED = 0;
+      OPTION_1 = 1;
+      OPTION_2 = 2;
+    }
+    OptionCode option_code = 1;
+  }
   int32 id = 1;
   Option option = 2;
+  SubOption sub_option = 3;
 }
