@@ -12,7 +12,7 @@ type Hoge struct {
 	WithMeta   string `json:"with_meta"`
 }
 
-func TestHoge(t *testing.T) {
+func TestRun(t *testing.T) {
 
 	h := Hoge{
 		PascalCase: "pascal",

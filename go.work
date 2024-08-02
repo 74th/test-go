@@ -16,4 +16,5 @@ use (
 	./20240714-streaming_http_server
 	./20240719-json_property_name
 	./20240730-protobuf-optional
+	./20240802-protobuf-nested-message
 )

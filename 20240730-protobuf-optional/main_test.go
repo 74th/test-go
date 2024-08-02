@@ -11,7 +11,7 @@ import (
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
-func TestHoge(t *testing.T) {
+func TestRun(t *testing.T) {
 
 	ts1, _ := time.Parse(time.RFC3339, "2024-07-30T13:00:00Z")
 	ts2, _ := time.Parse(time.RFC3339, "2024-07-30T14:00:00Z")
