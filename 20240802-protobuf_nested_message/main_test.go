@@ -4,7 +4,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/74th/testing-go/20240802-protobuf-nested-message/pb"
+	"github.com/74th/testing-go/20240802-protobuf_nested_message/pb"
 	"google.golang.org/protobuf/proto"
 )
 
