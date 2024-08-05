@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/74th/testing-go/20240730-protobuf-optional/pb"
+	"github.com/74th/testing-go/20240730-protobuf_optional/pb"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 	"google.golang.org/protobuf/types/known/timestamppb"
