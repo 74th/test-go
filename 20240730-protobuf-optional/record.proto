@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package protobuf_optional;
+
+option go_package = "github.com/74th/testing-go/20240730-protobuf-optional/pb";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/any.proto";
+
+
+message Record {
+  int32 id = 1;
+  optional int32 opt_id = 2;
+  google.protobuf.Timestamp ts = 3;
+  optional google.protobuf.Timestamp opt_ts = 4;
+  google.protobuf.Any any = 5;
+  optional google.protobuf.Any opt_any = 6;
+}
+
+message SubRecord {
+  int32 id = 1;
+}

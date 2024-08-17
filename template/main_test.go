@@ -2,5 +2,5 @@ package main
 
 import "testing"
 
-func TestHoge(t *testing.T) {
+func TestRun(t *testing.T) {
 }
