@@ -18,5 +18,6 @@ use (
 	./20240719-json_property_name
 	./20240730-protobuf_optional
 	./20240802-protobuf_nested_message
-	./20240805-interface-generics
+	./20240805-interface_generics
+	./20240821-slices_sort
 )
