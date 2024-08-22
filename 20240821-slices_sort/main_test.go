@@ -36,7 +36,6 @@ func TestSlices(t *testing.T) {
 		return a.ID - b.ID
 	})
 	log.Printf("slices.BinarySearchFunc() target: %d, n: %d, ok: %v", target, n, ok)
-
 }
 
 func TestSort(t *testing.T) {
@@ -63,4 +62,27 @@ func TestSort(t *testing.T) {
 		return rs[i].ID - target
 	})
 	log.Printf("sort.Find() target: %d, n: %d, ok: %v", target, n, ok)
+}
+
+func TestString(t *testing.T) {
+	rs := []string{"30", "10", "20"}
+
+	sort.Strings(rs)
+
+	target := "20"
+	n := sort.SearchStrings(rs, target)
+	log.Printf("sort.SearchString target: %s, n: %d, rs[n]:%s ok: %v", target, n, rs[n], rs[n] == target)
+
+	target = "15"
+	n = sort.SearchStrings(rs, target)
+	log.Printf("sort.SearchString target: %s, n: %d, rs[n]:%s ok: %v", target, n, rs[n], rs[n] == target)
+
+	// n < len(n) も評価しないとpanicになる
+	target = "5"
+	n = sort.SearchStrings(rs, target)
+	log.Printf("sort.SearchString target: %s, n: %d n<len(rs): %v", target, n, n < len(rs))
+
+	target = "35"
+	n = sort.SearchStrings(rs, target)
+	log.Printf("sort.SearchString target: %s, n: %d n<len(rs): %v", target, n, n < len(rs))
 }
