@@ -20,4 +20,7 @@ use (
 	./20240802-protobuf_nested_message
 	./20240805-interface_generics
 	./20240821-slices_sort
+	./20240906-uuid_regexp
+	./20241120-pb_timestamp
+	./20250402-interface_to_interface_cast
 )
