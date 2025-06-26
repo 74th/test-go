@@ -1,4 +1,4 @@
-go 1.22.5
+go 1.24.3
 
 use (
 	./20240124-json_time
@@ -23,4 +23,5 @@ use (
 	./20240906-uuid_regexp
 	./20241120-pb_timestamp
 	./20250402-interface_to_interface_cast
+	./20250625-sort_by_keys
 )
