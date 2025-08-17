@@ -1,4 +1,4 @@
-go 1.24.3
+go 1.25.0
 
 use (
 	./20240124-json_time
@@ -24,4 +24,5 @@ use (
 	./20241120-pb_timestamp
 	./20250402-interface_to_interface_cast
 	./20250625-sort_by_keys
+	./20250817-docker_desktop
 )
