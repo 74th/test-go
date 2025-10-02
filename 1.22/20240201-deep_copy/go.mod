@@ -1,0 +1,5 @@
+module github.com/74th/test-go/1.22/20240201-deep_copy
+
+go 1.22
+
+require go.mongodb.org/mongo-driver v1.13.1 // indirect
