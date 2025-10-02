@@ -1,5 +1,6 @@
-go 1.25
+go 1.25.1
 
 use (
 	./20250817-docker_desktop
+	./20251002-json
 )
